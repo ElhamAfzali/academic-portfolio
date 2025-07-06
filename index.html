@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Elham Afzali</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="sidebar">
-    <img src="assets/img/IMG_1585.JPG" alt="profile" class="profile">
+    <img src="assets/img/IMG_1585.JPG" class="profile" />
     <ul>
-      <li class="active">ABOUT</li>
-      <li>PUBLICATIONS</li>
-      <li>EDUCATION</li>
-      <li>TEACHING</li>
-      <li>EXPERIENCE</li>
-      <li>PRESENTATIONS</li>
-      <li>INTERESTS</li>
-      <li>AWARDS</li>
-      <li>PROFESSIONAL ACTIVITIES</li>
-      <li>CV</li>
+      <li class="active" onclick="showSection('about')">ABOUT</li>
+      <li onclick="showSection('publications')">PUBLICATIONS</li>
+      <li onclick="showSection('education')">EDUCATION</li>
+      <li onclick="showSection('teaching')">TEACHING</li>
+      <li onclick="showSection('experience')">EXPERIENCE</li>
+      <li onclick="showSection('interests')">INTERESTS</li>
+      <li onclick="showSection('awards')">AWARDS</li>
+      <li onclick="showSection('activities')">PROFESSIONAL ACTIVITIES</li>
+      <li onclick="showSection('cv')">CV</li>
     </ul>
   </div>
 
   <div class="main">
-    <h1><span>Surani</span> Matharaarachchi</h1>
-    <p>PhD in Statistics, University of Manitoba<br>
-    <a href="mailto:matharas@myumanitoba.ca">matharas@myumanitoba.ca</a></p>
-    
-    <p>I recently completed my PhD in the Department of Statistics ...</p>
-    
-    <p>My research focused on creating innovative methods ...</p>
-    
-    <p>Currently, I am working as a Data Scientist ...</p>
-    
-    <div class="icons">
-      <a href="#"><img src="assets/img/grad-icon.svg" alt="degree"></a>
-      <a href="#"><img src="assets/img/profile-icon.svg" alt="profile"></a>
-      <a href="#"><img src="assets/img/linkedin-icon.svg" alt="linkedin"></a>
-      <a href="#"><img src="assets/img/github-icon.svg" alt="github"></a>
+    <!-- ABOUT -->
+<div id="about" class="section active">
+  <h1><span>Elham</span> Afzali</h1>
+
+  <p>
+    I am a Ph.D. candidate in the 
+    <a href="https://umanitoba.ca/science/statistics" target="_blank">Department of Statistics</a> 
+    at the University of Manitoba, under the supervision of 
+    <a href="https://home.cc.umanitoba.ca/~wangl1/cgi-bin/index.php" target="_blank">Dr. Liqun Wang</a> 
+    and 
+    <a href="https://www.samanmuthukumarana.com/" target="_blank">Dr. Saman Muthukumarana</a>. 
+    My academic path has been shaped by a strong foundation in statistical theory, computational methods, and machine learning, built upon an 
+    <strong>M.Sc. in Mathematical Statistics</strong> from the University of Tehran and a 
+    <strong>B.Sc. in Statistics</strong> from Allameh Tabataba'i University in Iran.
+  </p>
+
+  <p>
+    My research focuses on developing robust and interpretable statistical methods for intractable models, particularly in the context of 
+    <strong>Bayesian inference</strong>, <strong>Stein discrepancies</strong>, and <strong>kernel-based model evaluation</strong>. 
+    With over eight years of combined academic and professional experience, I have led the development and implementation of statistical and machine learning solutions across diverse domains, 
+    including neuroscience, genomics, biomedical research, time-series forecasting, and archeology.
+  </p>
+
+  <div class="social-links">
+    <a href="https://elhamafzali.github.io/" title="Website"><i class="fas fa-fw fa-globe"></i></a>
+    <a href="https://www.linkedin.com/in/elhamafzali/" title="LinkedIn"><i class="fab fa-fw fa-linkedin"></i></a>
+    <a href="https://github.com/elhamafzali/" title="GitHub"><i class="fab fa-fw fa-github"></i></a>
+    <a href="https://twitter.com/" title="Twitter"><i class="fab fa-fw fa-twitter-square"></i></a>
+  </div>
+</div>
+
+    <!-- PUBLICATIONS -->
+    <div id="publications" class="section">
+      <h2>Publications</h2>
+      <ul>
+        <li><b>Afzali, E.</b>, Wang, L., & Muthukumarana, S. (2024). “GF-KCSD with Measurement Error.” <i>Bayesian Analysis</i>.</li>
+        <li><b>Afzali, E.</b>, Wang, L., & Muthukumarana, S. (2023). “Interpretability and Robustness in Kernel GOF.” <i>JSM Proceedings</i>.</li>
+      </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <div id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li>PhD in Statistics – University of Manitoba, Canada (2020–Present)</li>
+        <li>MSc in Mathematical Statistics – University of Tehran, Iran (2014–2016)</li>
+        <li>BSc in Statistics – Allameh Tabataba’i University, Iran (2009–2013)</li>
+      </ul>
+    </div>
+
+    <!-- TEACHING -->
+    <div id="teaching" class="section">
+      <h2>Teaching</h2>
+      <p>Sessional Instructor – STAT 1000, University of Manitoba (2020–2021)</p>
+      <p>Duties: Delivered lectures, prepared exams, supervised assignments, and mentored students in applied statistics.</p>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div id="experience" class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li>Research Assistant – Kernel Methods in Bayesian Inference (2019–Now)</li>
+        <li>Data Analyst – Genetic & MRI Research, Bioinformatics Lab, Tehran (2016–2018)</li>
+      </ul>
+    </div>
+
+    <!-- INTERESTS -->
+    <div id="interests" class="section">
+      <h2>Interests</h2>
+      <p>Statistical Theory, Machine Learning, Medical Data, Kernel Methods, Robust Inference, Reproducible Science, and Interpretable Models.</p>
+    </div>
+
+    <!-- AWARDS -->
+    <div id="awards" class="section">
+      <h2>Awards</h2>
+      <ul>
+        <li>Conference Travel Award – JSM 2024</li>
+        <li>Research Excellence Scholarship – University of Manitoba</li>
+        <li>Top MSc Thesis Award – University of Tehran</li>
+      </ul>
+    </div>
+
+    <!-- ACTIVITIES -->
+    <div id="activities" class="section">
+      <h2>Professional Activities</h2>
+      <ul>
+        <li>Reviewer – Bayesian Analysis, JSPI</li>
+        <li>Session Chair – IMS Conference 2024</li>
+        <li>Mentor – Women in Statistics Network</li>
+      </ul>
+    </div>
+
+    <!-- CV -->
+    <div id="cv" class="section">
+      <h2>CV</h2>
+      <p><a href="assets/ElhamAfzali_CV.pdf" target="_blank">Download My Full CV (PDF)</a></p>
     </div>
   </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      const menuItems = document.querySelectorAll('.sidebar ul li');
+
+      sections.forEach(sec => sec.classList.remove('active'));
+      menuItems.forEach(item => item.classList.remove('active'));
+
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
 
