@@ -80,13 +80,20 @@ a:hover {
   align-items: center;
 }
 
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .social-links a {
-  color: white;
+  color: #3498db; /* theme-accent blue */
   font-size: 22px;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #3498db;
+  color: #2c3e50; /* modern dark slate hover */
 }
 
